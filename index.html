@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game SuperApp</title>
+  <style>
+    /* Set mobile screen dimensions to emulate iPhone 14 Pro Max */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* Black background on sides */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Set a viewport for the iPhone 14 Pro Max resolution */
+    .container {
+      width: 430px; /* iPhone 14 Pro Max width in pixels */
+      height: 932px; /* iPhone 14 Pro Max height in pixels */
+      background-color: #fff;
+      border-radius: 24px; /* Rounded corners like a phone */
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    /* App Bar */
+    .app-bar {
+      background: linear-gradient(90deg, #2196f3 60%, #21cbf3 100%);
+      padding: 16px;
+      color: white;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 18px;
+    }
+
+    /* Grid layout for game cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      justify-items: center;
+      margin-top: 20px;
+      gap: 16px;
+      padding: 0 10px;
+    }
+
+    /* Individual Game Card */
+    .card {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+      padding: 8px;
+    }
+
+    /* Hover effect for cards */
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Card Image */
+    .card img {
+      width:  100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Card Title */
+    .card-title {
+      font-weight: 600;
+      font-size: 12px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="app-bar">
+      <h1>Game SuperApp</h1>
+    </div>
+    <div class="grid">
+      <div class="card" onclick="window.open('http://127.0.0.1:5500/Chaotic%20Spin%20%20HTML5%20%20CONSTRUCT%203/Chaotic%20Spin/ChaoticSpinHTML5/index.html', '_blank')">
+        <img src="/Chaotic Spin  HTML5  CONSTRUCT 3/Chaotic Spin/ChaoticSpinHTML5/icons/icon-256.png" alt="Chaotic Spin">
+        <div class="card-title">Chaotic Spin</div>
+      </div>
+      <div class="card" onclick="window.open('http://127.0.0.1:5500/Pipe%20Connect(Html5%20+%20Construct%203%20+Mobile)/game/index.html', '_blank')">
+        <img src="Pipe Connect(Html5 + Construct 3 +Mobile)\game\icons\icon-256.png" alt="Pipe Connect">
+        <div class="card-title">Pipe Connect</div>
+      </div>
+      <div class="card" onclick="window.open('http://127.0.0.1:5500/Connect%20A%20Way%20-%20HTML5%20Game/game/index.html', '_blank')">
+        <img src="Connect A Way - HTML5 Game\documentation\assets\images\favicon.png" alt="Connect A Way">
+        <div class="card-title">Connect A Way</div>
+      </div>
+      <div class="card" onclick="window.open('http://127.0.0.1:5500/Evasive%20Balls%20%20HTML5%20%20CONSTRUCT%203/Evasive%20Balls/EvasiveBallsHTML5/index.html', '_blank')">
+        <img src="\Evasive Balls  HTML5  CONSTRUCT 3\Evasive Balls\EvasiveBallsHTML5\icons\icon-256.png" alt="Evasive Balls">
+        <div class="card-title">Evasive Balls</div>
+      </div>
+      <div class="card" onclick="window.open('http://127.0.0.1:5500/Jewel%20Block%20Puzzle%20(Html5%20+%20Construct%203%20+Mobile)/game/index.html', '_blank')">
+        <img src="\Jewel Block Puzzle (Html5 + Construct 3 +Mobile)\game\icons\icon-256.png" alt="Jewel Block Puzzle">
+        <div class="card-title">Jewel Block Puzzle</div>
+      </div>
+      <div class="card" onclick="window.open('http://127.0.0.1:5500/Number%20Snake%20(Construct%203%20+%20HTML%20+%20Mobile)/game/index.html', '_blank')">
+        <img src="Number Snake (Construct 3 + HTML + Mobile)\game\icons\icon-256.png" alt="Number Snake">
+        <div class="card-title">Number Snake</div>
+      </div>
+      <div class="card" onclick="window.open('http://127.0.0.1:5500/Sudoku%20Construct%202%20HTML5%20Game/Sudoku/index.html', '_blank')">
+        <img src="Sudoku Construct 2 HTML5 Game\Sudoku\icon-256.png" alt="Sudoku">
+        <div class="card-title">Sudoku</div>
+      </div>
+      <div class="card" onclick="window.open('http://127.0.0.1:5500/TriShape%20Connect%20-%20HTML5%20Game%20with%20Admob%20Integration/HTML5/TriShape%20Connect/index.html', '_blank')">
+        <img src="TriShape Connect - HTML5 Game with Admob Integration\HTML5\TriShape Connect\icons\icon-256.png" alt="TriShape Connect">
+        <div class="card-title">TriShape Connect</div>
+      </div>
+      <div class="card" onclick="window.open('http://127.0.0.1:5500/Word%20Game%20-%20HTML5%20game%20(Construct%203)/Word%20Game/HTML5_export/Word%20Game/index.html', '_blank')">
+        <img src="Word Game - HTML5 game (Construct 3)\Word Game\HTML5_export\Word Game\icons\icon-256.png" alt="Word Game">
+        <div class="card-title">Word Game</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
